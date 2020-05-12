@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анастасия Леман](https://up.htmlacademy.ru/htmlcss/28/user/1411351).
-* Наставник: `Александр Кошара`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela)
 
 ---
 
