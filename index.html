@@ -11,14 +11,29 @@
         <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип Глэйси">
       </a>
       <ul>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a>
+          <ul>
+            <li>Новинки</li>
+            <li><a href="catalog.html">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="about_company.html">О компании</a></li>
       </ul>
     </nav>
     <nav>
-      <a href="entry.html">Вход</a>
-      <a href="basket.html">Корзина</a>
+      <ul>
+      <li>
+        <form>
+          <input type="text" placeholder="Крем-брюле">
+        </form>
+      </li>
+      <li><a href="entry.html">Вход</a></li>
+      <li><a href="basket.html">Корзина</a></li>
+      </ul>
     </nav>
     <section>
       <h2>Режим работы и телефон</h2>
@@ -176,5 +191,39 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a>
       </section>
     </footer>
+    <section>
+      <h2>Личный кабинет</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="login" class="visually-hidden">Логин</label>
+          <input id="login" type="email" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="password" class="visually-hidden">Пароль</label>
+          <input id="password" type="password" name="password" placeholder="••••••">
+        </p>
+        <button type="submit">Войти</button>
+        <p><a href="#">Забыли пароль?</a></p>
+        <p><a href="#">Новая регистрация</a></p>
+      </form>
+    </section>
+    <section>
+      <h2>Форма обратной связи</h2>
+      <p>Мы обязательно вам ответим!</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="feedback-name" class="visualy-hidden">Имя</label>
+          <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label for="feedback-email" class="visualy-hidden">Почта</label>
+          <input id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <textarea rows="10" cols="40" name="text" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
