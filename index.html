@@ -29,10 +29,27 @@
       <li>
         <form>
           <input type="text" placeholder="Крем-брюле">
-          <button type="submit">Поиск</button>
+          <button type="submit" class="visually-hidden">Поиск</button>
         </form>
       </li>
-      <li><a href="entry.html">Вход</a></li>
+      <li><a href="entry.html">Вход</a>
+        <section>
+          <h2>Личный кабинет</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="login" class="visually-hidden">Логин</label>
+              <input id="login" type="email" name="login" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="password" class="visually-hidden">Пароль</label>
+              <input id="password" type="password" name="password" placeholder="••••••">
+            </p>
+            <button type="submit">Войти</button>
+            <p><a href="#">Забыли пароль?</a></p>
+            <p><a href="#">Новая регистрация</a></p>
+        </form>
+        </section>
+      </li>
       <li><a href="basket.html">Корзина</a></li>
       </ul>
     </nav>
@@ -193,32 +210,16 @@
       </section>
     </footer>
     <section>
-      <h2>Личный кабинет</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="login" class="visually-hidden">Логин</label>
-          <input id="login" type="email" name="login" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="password" class="visually-hidden">Пароль</label>
-          <input id="password" type="password" name="password" placeholder="••••••">
-        </p>
-        <button type="submit">Войти</button>
-        <p><a href="#">Забыли пароль?</a></p>
-        <p><a href="#">Новая регистрация</a></p>
-      </form>
-    </section>
-    <section>
       <h2>Форма обратной связи</h2>
       <p>Мы обязательно вам ответим!</p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="feedback-name" class="visualy-hidden">Имя</label>
-          <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+          <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут?" required>
         </p>
         <p>
           <label for="feedback-email" class="visualy-hidden">Почта</label>
-          <input id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
+          <input id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа?" required>
         </p>
         <p>
           <textarea rows="10" cols="40" name="text" placeholder="Напишите что-нибудь..."></textarea>
