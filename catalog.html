@@ -16,9 +16,71 @@
         <li><a href="about_company.html">О компании</a></li>
       </ul>
     </nav>
+<!--Навигация с Поиском, Входом и Корзиной-->
     <nav>
-      <a href="entry.html">Вход</a>
-      <a href="basket.html">Корзина</a>
+      <ul>
+      <li>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <label id="search" class="visually-hidden">Поле поиска</label>
+          <input type="search" name="search" placeholder="Крем-брюле">
+          <button type="submit" class="visually-hidden">Поиск</button>
+        </form>
+      </li>
+      <li><a href="entry.html">Вход</a>
+        <section>
+          <h2>Личный кабинет</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="login" class="visually-hidden">Логин</label>
+              <input id="login" type="email" name="login" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="password" class="visually-hidden">Пароль</label>
+              <input id="password" type="password" name="password" placeholder="••••••">
+            </p>
+            <button type="submit">Войти</button>
+            <div>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+        </form>
+        </section>
+      </li>
+      <li><a href="basket.html">Корзина</a></li>
+<!--Разметка корзины-->
+      <section>
+        <table>
+          <tr>
+            <td>
+              <button value="Удалить товар из корзины">x</button>
+            </td>
+            <td>
+              <img src="img/basket-ice.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+            </td>
+            <td>Пломбир с апельсиновым джемом</td>
+            <td>
+              1,5 кг х <span>200 руб.</span>
+            </td>
+            <td>300 руб.</td>
+          </tr>
+          <tr>
+            <td>
+              <button value="Удалить товар из корзины">x</button>
+            </td>
+            <td>
+              <img src="img/basket-ice2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+            </td>
+            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td>
+              1,5 кг х <span>300 руб.</span>
+            </td>
+            <td>400 руб.</td>
+          </tr>
+          <tr>
+            <td colspan="3">Итого</td>
+          </tr>
+        </table>
+      </section>
     </nav>
     <section>
       <h2>Режим работы и телефон</h2>
@@ -189,10 +251,10 @@
       <section>
         <h2>Соц сети</h2>
         <ul>
-          <li><a href="#"><img src="img/fb.svg" width="32" height="32">FB</a></li>
-          <li><a href="#"><img src="img/vk.svg" width="32" height="32">VK</a></li>
-          <li><a href="#"><img src="img/ig.svg" width="32" height="32">Instagram</a></li>
-          <li><a href="#"><img src="img/tw.svg" width="32" height="32">Twitter</a></li>
+          <li><a href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук">FB</a></li>
+          <li><a href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте">VK</a></li>
+          <li><a href="#"><img src="img/ig.svg" width="32" height="32" alt="Инстаграм">Instagram</a></li>
+          <li><a href="#"><img src="img/tw.svg" width="32" height="32" alt="Твиттер">Twitter</a></li>
         </ul>
       </section>
       <section>

@@ -24,11 +24,13 @@
         <li><a href="about_company.html">О компании</a></li>
       </ul>
     </nav>
+<!--Навигация с Поиском, Входом и Корзиной-->
     <nav>
       <ul>
       <li>
-        <form>
-          <input type="text" placeholder="Крем-брюле">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <label id="search" class="visually-hidden">Поле поиска</label>
+          <input type="search" name="search" placeholder="Крем-брюле">
           <button type="submit" class="visually-hidden">Поиск</button>
         </form>
       </li>
@@ -45,8 +47,10 @@
               <input id="password" type="password" name="password" placeholder="••••••">
             </p>
             <button type="submit">Войти</button>
-            <p><a href="#">Забыли пароль?</a></p>
-            <p><a href="#">Новая регистрация</a></p>
+            <div>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
         </form>
         </section>
       </li>
@@ -165,13 +169,15 @@
     <section>
       <h2>Подписка</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <p>email@example.com</p>
-      <!--форма-->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="subscribe-email" class="visualy-hidden">Электронная почта</label>
+        <input id="subscribe-email" type="submit" name="email" placeholder="Электронная почта">
+      </form>
       <button type="button">Отправить</button>
     </section>
     <section>
       <h2>Интерактивная карта</h2>
-      <img src="img/map.jpg" width="1200" height="430" alt="">
+      <img src="img/map.jpg" width="1200" height="430" alt="Карта">
       <div>
         Адрес главного офиса и офлайн-магазина:<br>
         ул. Большая Конюшенная, 19/8, Санкт-Петербург<br>
@@ -186,10 +192,10 @@
       <section>
         <h2>Соц сети</h2>
         <ul>
-          <li><a href="#"><img src="img/fb.svg" width="32" height="32">FB</a></li>
-          <li><a href="#"><img src="img/vk.svg" width="32" height="32">VK</a></li>
-          <li><a href="#"><img src="img/ig.svg" width="32" height="32">Instagram</a></li>
-          <li><a href="#"><img src="img/tw.svg" width="32" height="32">Twitter</a></li>
+          <li><a href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук">FB</a></li>
+          <li><a href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте">VK</a></li>
+          <li><a href="#"><img src="img/ig.svg" width="32" height="32" alt="Инстаграм">Instagram</a></li>
+          <li><a href="#"><img src="img/tw.svg" width="32" height="32" alt="Твиттер">Twitter</a></li>
         </ul>
       </section>
       <section>
@@ -219,7 +225,7 @@
         </p>
         <p>
           <label for="feedback-email" class="visualy-hidden">Почта</label>
-          <input id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа?" required>
+          <input id="feedback-email" type="submit" name="email" placeholder="Ваша почта для ответа?" required>
         </p>
         <p>
           <textarea rows="10" cols="40" name="text" placeholder="Напишите что-нибудь..."></textarea>
