@@ -102,18 +102,18 @@
       </ul>
     </nav>
     <h1>Сливочное мороженое</h1>
+<!--Разметка фильтра товаров-->
     <section>
       <h2>Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Сортировка:</legend>
-          <input type="text" list="sort" name="sort">
-          <datalist id="sort">
+          <select name="сортировка товаров">
             <option value="по популярности" selected>по популярности</option>
             <option value="сначала недорогие">сначала недорогие</option>
             <option value="сначала дорогие">сначала дорогие</option>
             <option value="по жирности">по жирности</option>
-          </datalist>
+          </select>
         </fieldset>
         <fieldset>
           <legend>Цена: 100 &#8381; - 500 &#8381;</legend>
@@ -138,6 +138,32 @@
               больше 30%
           </label>
         </fieldset>
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <ul class="hr-inline"> <!--расположить список горизонтально-->
+            <li>
+              <input type="checkbox" name="chocolate" id="filling-chocolate" checked>
+              <label for="filling-chocolate">шоколадные</label>
+            </li>
+            <li>
+              <input type="checkbox" name="shugar" id="filling-shugar" checked>
+              <label for="filling-shugar">сахарные присыпки</label>
+            </li>
+            <li>
+              <input type="checkbox" name="fruit" id="filling-fruit">
+              <label for="filling-fruit">фрукты</label>
+            </li>
+            <li>
+              <input type="checkbox" name="syrup" id="filling-syrup">
+              <label for="filling-syrup">сиропы</label>
+            </li>
+            <li>
+              <input type="checkbox" name="jam" id="filling-jam">
+              <label for="filling-jam">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Применить</button>
       </form>
     </section>
     <section>
