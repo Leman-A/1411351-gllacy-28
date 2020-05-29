@@ -27,34 +27,34 @@
 <!--Навигация с Поиском, Входом и Корзиной-->
     <nav>
       <ul>
-      <li>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <label id="search" class="visually-hidden">Поле поиска</label>
-          <input type="search" name="search" placeholder="Крем-брюле">
-          <button type="submit" class="visually-hidden">Поиск</button>
-        </form>
-      </li>
-      <li><a href="entry.html">Вход</a>
-        <section>
-          <h2>Личный кабинет</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label for="login" class="visually-hidden">Логин</label>
-              <input id="login" type="email" name="login" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="password" class="visually-hidden">Пароль</label>
-              <input id="password" type="password" name="password" placeholder="••••••">
-            </p>
-            <button type="submit">Войти</button>
-            <div>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </div>
-        </form>
-        </section>
-      </li>
-      <li><a href="basket.html">Корзина</a></li>
+        <li>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label id="search" class="visually-hidden">Поле поиска</label>
+            <input type="search" name="search" placeholder="Крем-брюле">
+            <button type="submit" class="visually-hidden">Поиск</button>
+          </form>
+        </li>
+        <li><a href="entry.html">Вход</a>
+          <section>
+            <h2>Личный кабинет</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label for="login" class="visually-hidden">Логин</label>
+                <input id="login" type="email" name="login" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="password" class="visually-hidden">Пароль</label>
+                <input id="password" type="password" name="password" placeholder="••••••">
+              </p>
+              <button type="submit">Войти</button>
+              <div>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+            </form>
+          </section>
+        </li>
+        <li><a href="basket.html">Корзина</a></li>
       </ul>
     </nav>
     <section>
@@ -171,7 +171,7 @@
       <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="subscribe-email" class="visualy-hidden">Электронная почта</label>
-        <input id="subscribe-email" type="submit" name="email" placeholder="Электронная почта">
+        <input id="subscribe-email" type="email" name="email" placeholder="Электронная почта">
       </form>
       <button type="button">Отправить</button>
     </section>
@@ -225,7 +225,7 @@
         </p>
         <p>
           <label for="feedback-email" class="visualy-hidden">Почта</label>
-          <input id="feedback-email" type="submit" name="email" placeholder="Ваша почта для ответа?" required>
+          <input id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?" required>
         </p>
         <p>
           <textarea rows="10" cols="40" name="text" placeholder="Напишите что-нибудь..."></textarea>

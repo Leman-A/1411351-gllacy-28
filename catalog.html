@@ -19,14 +19,14 @@
 <!--Навигация с Поиском, Входом и Корзиной-->
     <nav>
       <ul>
-      <li>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <label id="search" class="visually-hidden">Поле поиска</label>
-          <input type="search" name="search" placeholder="Крем-брюле">
-          <button type="submit" class="visually-hidden">Поиск</button>
-        </form>
-      </li>
-      <li><a href="entry.html">Вход</a>
+        <li>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label id="search" class="visually-hidden">Поле поиска</label>
+            <input type="search" name="search" placeholder="Крем-брюле">
+            <button type="submit" class="visually-hidden">Поиск</button>
+          </form>
+        </li>
+        <li><a href="entry.html">Вход</a>
         <section>
           <h2>Личный кабинет</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
@@ -43,46 +43,50 @@
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </div>
-        </form>
+          </form>
         </section>
-      </li>
-      <li><a href="basket.html">Корзина</a></li>
-<!--Разметка корзины-->
-      <section>
-        <table>
-          <tr>
-            <td>
-              <button value="Удалить товар из корзины">x</button>
-            </td>
-            <td>
-              <img src="img/basket-ice.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-            </td>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td>
-              1,5 кг х <span>200 руб.</span>
-            </td>
-            <td>300 руб.</td>
-          </tr>
-          <tr>
-            <td>
-              <button value="Удалить товар из корзины">x</button>
-            </td>
-            <td>
-              <img src="img/basket-ice2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-            </td>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>
-              1,5 кг х <span>300 руб.</span>
-            </td>
-            <td>400 руб.</td>
-          </tr>
-          <tr>
-            <td colspan="3">Итого</td>
-          </tr>
-        </table>
-        <button type="submit">Оформить заказ</button>
-      </section>
+        </li>
+        <li><a href="basket.html">Корзина</a></li>
+      </ul>
     </nav>
+  <!--Разметка корзины-->
+        <section>
+          <h2>Корзина с товарами</h2>
+          <table>
+            <tr>
+              <td>
+                <button type="button" value="Удалить товар из корзины">x</button>
+              </td>
+              <td>
+                <img src="img/basket-ice.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+              </td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>
+                1,5 кг х <span>200 руб.</span>
+              </td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td>
+                <button value="Удалить товар из корзины">x</button>
+              </td>
+              <td>
+                <img src="img/basket-ice2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+              </td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>
+                1,5 кг х <span>300 руб.</span>
+              </td>
+              <td>400 руб.</td>
+            </tr>
+            <tr>
+              <td colspan="3">Итого</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          <button type="submit">Оформить заказ</button>
+        </section>
     <section>
       <h2>Режим работы и телефон</h2>
       <p>с 10 до 20, ежедневно</p>
@@ -100,6 +104,41 @@
     <h1>Сливочное мороженое</h1>
     <section>
       <h2>Фильтр товаров</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <input type="text" list="sort" name="sort">
+          <datalist id="sort">
+            <option value="по популярности" selected>по популярности</option>
+            <option value="сначала недорогие">сначала недорогие</option>
+            <option value="сначала дорогие">сначала дорогие</option>
+            <option value="по жирности">по жирности</option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <legend>Цена: 100 &#8381; - 500 &#8381;</legend>
+          <input type="range" min="100" max="500" step="1">
+        </fieldset>
+        <fieldset>
+          <legend>Жирность:</legend>
+          <label>
+            <input type="radio" name="richness" value="0%">
+              0%
+          </label>
+          <label>
+            <input type="radio" name="richness" value="до 10%" checked>
+              до 10%
+          </label>
+          <label>
+            <input type="radio" name="richness" value="до 30%">
+              до 30%
+          </label>
+          <label>
+            <input type="radio" name="richness" value="больше 30%">
+              больше 30%
+          </label>
+        </fieldset>
+      </form>
     </section>
     <section>
       <h2>Список вкусов мороженого</h2>
