@@ -1,0 +1,376 @@
+/* Variables */
+
+:root {
+    --basic-white: #FFFFFF;
+    --grey-backrground-yellow: #F8F7F4; 
+    --grey-placeholder: #999999;
+    --grey-basket-price: #C4C4C4;
+    --grey-light-post:#5A5A5A;
+    --grey-light-border: #B2B2B2;
+    --grey-border-login: #D3D3D2;
+    --grey-dark-text: #323232;
+    --grey-darkness: #231F20; /* цвет ХИТ */
+    --pink-light: #F26843;
+    --pink-dark: #E74A35;
+    --pink-selected: #FBDED7;
+    --pink-selected-catalog: #D07058;
+    --background-green: #849D8F;
+    --background-blue: #8996A6;
+    --background-red: #9D8B84;
+    --background-white: #FEFEFE;
+    --text-shadow-button: #a01f0b;
+    --box-shadow-button: #ac1000;
+    --text-shadow-price: #313235;
+    --text-border-news: #353535;
+    --black-shadow: #000000;
+}
+
+body {
+    min-width: 1166px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--basic-white);
+    background-color: var(--background-green);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.main-navigation, .user-navigation {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+.site-navigation {
+    list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-white);
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-white);
+  border-radius: 26px;
+  color: var(--grey-dark-text);
+}
+.text-operating-mode {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+}
+.phone-number-header {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--basic-white);
+}
+.slider-ice {
+    list-style: none; 
+}
+.text-slider {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+}
+.button {
+    text-decoration: none;
+    color: var(--basic-white);
+    text-shadow: 0px 2px 5px rgba(var(--text-shadow-button), 0.76);
+    border-radius: 70px;
+    box-shadow: 0px 2px 2px rgba(var(--box-shadow-button), 0.64);
+    background: linear-gradient(180deg, var(--pink-light) 0%, var(--pink-dark) 100%);
+}
+.slider-button {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 44px;
+}
+.promo {
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    width: 560px;
+    height: 229px;
+}
+.promo-raspberry {
+    background-image: url("../img/raspberry.jpg");
+}
+.promo-chocolate {
+    background-image: url("../img/chocolate.jpg");
+}
+.title-promo {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+}
+.text-promo {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+}
+.list-hit {
+    list-style: none;
+}
+.title-hit {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(var(--basic-white), 0.2); /*Что-то не то, смотреть вот тут? http://prgssr.ru/development/sposoby-podcherkivaniya.html#heading-border-bottom*/
+}
+.list-hit .price {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    text-shadow: 0px 1px 3px rgba(var(--text-shadow-price), 0.5);
+}
+.list-hit .weight {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-shadow: 0px 1px 3px rgba(var(--text-shadow-price), 0.5);
+}
+.ice-pic {
+    border-radius: 50%;
+}
+.desc {
+    background-image: url(../img/waffle.png);
+    border-radius: 16px;
+}
+.title-desc {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--grey-dark-text);
+}
+.list-desc {
+    list-style: none;
+}
+.item-desc {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--grey-dark-text);
+    padding-left: 55px;
+}
+.icon-ice {
+    background: url(../img/icon-ice.svg) no-repeat 0 -13px;
+}
+.icon-list {
+    background: url(../img/icon-list.svg) no-repeat 0 -13px;
+}
+.icon-cow {
+    background: url(../img/icon-cow.svg) no-repeat 0 -13px;
+}
+.icon-grad {
+    background: url(../img/icon-grad.svg) no-repeat 0 -13px;
+}
+.aside {
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 220px;
+    border-radius: 16px;
+}
+.news-section {
+    background-image: url(../img/fon-strawberry.jpg);
+}
+.subscribe {
+    background-image: url(../img/fon-post.jpg);
+}
+.subscribe-section {
+    background-color: var(--grey-backrground-yellow);
+    width: 548px;
+    height: 210px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.title-news {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--grey-dark-text);
+}
+.text-news {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--grey-dark-text); /*тут подчеркивание ссылки немного другого цвета, нужно через бордер боттом, но выше я уже не справилась*/
+}
+.text-subscribe {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--grey-light-post)
+}
+.button-subscribe {
+    text-decoration: none;
+    color: var(--basic-white);
+    text-shadow: 0px 2px 5px rgba(var(--text-shadow-button), 0.76);
+    border: none;
+    border-radius: 70px;
+    box-shadow: 0px 2px 2px rgba(var(--box-shadow-button), 0.64);
+    background: linear-gradient(180deg, var(--pink-light) 0%, var(--pink-dark) 100%);
+}
+.form-map {
+    background-color: var(--background-white);
+    width: 303px;
+    height: 306px;
+    border-radius: 16px;
+    color: var(--grey-dark-text);
+}
+.text-form {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+.info {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--grey-dark-text);
+}
+.list-social {
+    list-style: none;
+}
+.icon-social {
+    border: 2px solid rgba(var(--basic-white), 0.5);  /*не понимаю, почему не работает*/
+}
+.footer-info {
+    list-style: none;
+}
+.item-provider {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    color: var(--basic-white);
+    border-bottom: 1px solid rgba(--basic-white, 0.2); /*попробовала так*/
+}
+.item-information {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    color: var(--basic-white);
+    border-bottom: 1px solid rgba(var(--basic-white), 0.2); /*не везет мне с подчеркиваниями*/
+}
+.html-academy {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: var(--basic-white);
+    border: 1px solid rgba(var(--basic-white), 0.2); /*и снова подчеркивание*/
+}
+.text-academy {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: var(--basic-white);
+}
+.feedback-form {
+    width: 477px;
+    height: 441px;
+    border-radius: 6px;
+    background-color: var(--grey-backrground-yellow);
+}
+.title-feedback {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--grey-dark-text);
+}
+.feedback-close {
+    background-color: var(--grey-backrground-yellow);
+    border: none;
+}
+#feedback-name {
+    width: 267px;
+    height: 44px;
+    background-color: var(--basic-white);
+    border: 1px solid rgba(--grey-light-border, 0.52); /*Что-то явно не так с моими бордерами*/
+    border-radius: 4px;
+}
+#feedback-email {
+    width: 267px;
+    height: 44px;
+    background-color: var(--basic-white);
+    border: 1px solid rgba(--grey-light-border, 0.52); 
+    border-radius: 4px;
+}
+#feedback-comment {
+    width: 428px;
+    height: 154px;
+    background-color: var(--basic-white);
+    border: 1px solid rgba(var(--grey-light-border), 0.52); /*Надо тут убрать бордер встроенный и добавить свой*/
+    border-radius: 4px;
+}
+.feedback-button {
+    text-decoration: none;
+    color: var(--basic-white);
+    text-shadow: 0px 2px 5px rgba(var(--text-shadow-button), 0.76);
+    border: none;
+    border-radius: 70px;
+    box-shadow: 0px 2px 2px rgba(var(--box-shadow-button), 0.64);
+    background: linear-gradient(180deg, var(--pink-light) 0%, var(--pink-dark) 100%);
+}
+.login-form {
+    width: 277px;
+    height: 214px;
+    border-radius: 4px;
+    background-color: var(--grey-backrground-yellow);
+    box-shadow: 0px 20px 20px rgba(var(--black-shadow), 0.4);
+}
+#login {
+    width: 241px;
+    height: 44px;
+    background-color: var(--basic-white);
+    border: 1px solid var(--grey-border-login);
+    border-radius: 4px;
+}
+#password {
+    width: 241px;
+    height: 44px;
+    background-color: var(--basic-white);
+    border: 1px solid var(--grey-border-login);
+    border-radius: 4px;
+}
+.button-login {
+    text-decoration: none;
+    color: var(--basic-white);
+    text-shadow: 0px 2px 5px rgba(var(--text-shadow-button), 0.76);
+    border: none;
+    border-radius: 70px;
+    box-shadow: 0px 2px 2px rgba(var(--box-shadow-button), 0.64);
+    background: linear-gradient(180deg, var(--pink-light) 0%, var(--pink-dark) 100%);
+}
+.login-text {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--grey-dark-text); /*не красится текст(*/
+}
+.search-form {
+    width: 341px;
+    height: 84px;
+    border-radius: 4px;
+    background-color: var(--grey-backrground-yellow);
+    box-shadow: 0px 20px 20px rgba(var(--black-shadow), 0.4);
+}
+#search {
+    width: 311px;
+    height: 44px;
+    background-color: var(--basic-white);
+    border: 1px solid var(--grey-border-login);
+    border-radius: 4px;
+}
