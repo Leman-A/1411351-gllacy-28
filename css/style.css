@@ -2,13 +2,15 @@
 
 :root {
     --basic-white: #FFFFFF;
+    --white: 255, 255, 255;
     --grey-backrground-yellow: #F8F7F4; 
     --grey-placeholder: #999999;
     --grey-basket-price: #C4C4C4;
     --grey-light-post:#5A5A5A;
-    --grey-light-border: #B2B2B2;
+    --grey-light-border: 178, 178, 178;
     --grey-border-login: #D3D3D2;
     --grey-dark-text: #323232;
+    --grey-dark-line: 50, 50,50;
     --grey-darkness: #231F20; /* цвет ХИТ */
     --pink-light: #F26843;
     --pink-dark: #E74A35;
@@ -19,8 +21,8 @@
     --background-red: #9D8B84;
     --background-white: #FEFEFE;
     --text-shadow-button: #a01f0b;
-    --box-shadow-button: #ac1000;
-    --text-shadow-price: #313235;
+    --box-shadow-button: 172, 16, 0;
+    --text-shadow-price: 49, 50, 53;
     --text-border-news: #353535;
     --black-shadow: #000000;
 }
@@ -39,23 +41,23 @@ img {
     max-width: 100%;
     height: auto;
 }
-.main-navigation, .user-navigation {
+.main-nav, .user-nav {
     font-size: 16px;
     font-weight: bold;
     line-height: 18px;
     color: var(--basic-white);
 }
-.site-navigation {
+.site-nav {
     list-style: none;
 }
-.site-navigation a,
-.user-navigation a {
+.site-nav-items,
+.user-nav-items {
   color: var(--basic-white);
 }
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-nav-items:hover,
+.site-nav-items:focus,
+.user-nav-items:hover,
+.user-nav-items:focus {
   background-color: var(--basic-white);
   border-radius: 26px;
   color: var(--grey-dark-text);
@@ -65,12 +67,25 @@ img {
     font-weight: bold;
     line-height: 16px;
 }
-.phone-number-header {
+.phone-number {
     font-size: 22px;
     font-weight: bold;
     line-height: 24px;
     text-decoration: none;
     color: var(--basic-white);
+}
+.list-breadcrumbs {
+    list-style: none;
+}
+.breadcrumbs{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--basic-white);
+    border: 1px solid rgba(var(--white), 0.2);
+}
+.breadcrumbs-active{
+    text-decoration: none;
 }
 .slider-ice {
     list-style: none; 
@@ -123,8 +138,7 @@ img {
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
-    border-bottom: 1px solid;
-    border-bottom-color: rgba(var(--basic-white), 0.2); /*Что-то не то, смотреть вот тут? http://prgssr.ru/development/sposoby-podcherkivaniya.html#heading-border-bottom*/
+    border-bottom: 1px solid rgba(var(--white), 0.2);
 }
 .list-hit .price {
     font-weight: bold;
@@ -238,11 +252,29 @@ img {
     text-decoration: none;
     color: var(--grey-dark-text);
 }
+.list-pagination {
+    list-style: none;
+}
+.list-pagination-items {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+/*
+.list-pagination-items-active {
+    background-color: var(--basic-white);
+    border-radius: 50%;
+    color: var(--grey-dark-text);
+}
+*/
 .list-social {
     list-style: none;
 }
 .icon-social {
-    border: 2px solid rgba(var(--basic-white), 0.5);  /*не понимаю, почему не работает*/
+    border: 2px solid rgba(var(--white), 0.5);
+    border-radius: 50%;
 }
 .footer-info {
     list-style: none;
@@ -253,7 +285,7 @@ img {
     line-height: 18px;
     text-decoration: none;
     color: var(--basic-white);
-    border-bottom: 1px solid rgba(--basic-white, 0.2); /*попробовала так*/
+    border-bottom: 1px solid rgba(var(--white), 0.2);
 }
 .item-information {
     font-weight: normal;
@@ -261,7 +293,7 @@ img {
     line-height: 18px;
     text-decoration: none;
     color: var(--basic-white);
-    border-bottom: 1px solid rgba(var(--basic-white), 0.2); /*не везет мне с подчеркиваниями*/
+    border-bottom: 1px solid rgba(var(--white), 0.2);
 }
 .html-academy {
     font-weight: normal;
@@ -269,7 +301,7 @@ img {
     line-height: 18px;
     text-decoration: none;
     color: var(--basic-white);
-    border: 1px solid rgba(var(--basic-white), 0.2); /*и снова подчеркивание*/
+    border: 1px solid rgba(var(--white), 0.2);
 }
 .text-academy {
     font-weight: normal;
@@ -294,21 +326,21 @@ img {
     background-color: var(--grey-backrground-yellow);
     border: none;
 }
-#feedback-name {
+.feedback-name {
     width: 267px;
     height: 44px;
     background-color: var(--basic-white);
-    border: 1px solid rgba(--grey-light-border, 0.52); /*Что-то явно не так с моими бордерами*/
+    border: 1px solid rgba(var(--grey-light-border), 0.52); 
     border-radius: 4px;
 }
-#feedback-email {
+.feedback-email {
     width: 267px;
     height: 44px;
     background-color: var(--basic-white);
-    border: 1px solid rgba(--grey-light-border, 0.52); 
+    border: 1px solid rgba(var(--grey-light-border), 0.52); 
     border-radius: 4px;
 }
-#feedback-comment {
+.feedback-comment {
     width: 428px;
     height: 154px;
     background-color: var(--basic-white);
@@ -331,14 +363,14 @@ img {
     background-color: var(--grey-backrground-yellow);
     box-shadow: 0px 20px 20px rgba(var(--black-shadow), 0.4);
 }
-#login {
+.login {
     width: 241px;
     height: 44px;
     background-color: var(--basic-white);
     border: 1px solid var(--grey-border-login);
     border-radius: 4px;
 }
-#password {
+.password {
     width: 241px;
     height: 44px;
     background-color: var(--basic-white);
@@ -358,7 +390,9 @@ img {
     font-weight: normal;
     font-size: 13px;
     line-height: 15px;
-    color: var(--grey-dark-text); /*не красится текст(*/
+    text-decoration: none;
+    color: var(--grey-dark-text);
+    border-bottom: 1px solid rgba(var(--grey-dark-line), 0.3);;
 }
 .search-form {
     width: 341px;
@@ -367,7 +401,7 @@ img {
     background-color: var(--grey-backrground-yellow);
     box-shadow: 0px 20px 20px rgba(var(--black-shadow), 0.4);
 }
-#search {
+.search {
     width: 311px;
     height: 44px;
     background-color: var(--basic-white);
