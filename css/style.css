@@ -41,13 +41,59 @@ img {
     max-width: 100%;
     height: auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+.container {
+    width: 1200;
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+  }  
 .main-nav, .user-nav {
     font-size: 16px;
     font-weight: bold;
     line-height: 18px;
     color: var(--basic-white);
 }
+.header-box {
+    display: grid;
+}
+.slider-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.promo-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-box {
+    display: flex;
+    flex-direction: row;
+}
+.list-new-ice {
+    display: none;
+}
 .site-nav {
+    list-style: none;
+}
+.list-user-nav {
     list-style: none;
 }
 .site-nav-items,
@@ -61,6 +107,12 @@ img {
   background-color: var(--basic-white);
   border-radius: 26px;
   color: var(--grey-dark-text);
+}
+.search-form {
+    display: none;
+}
+.login-form {
+    display: none; 
 }
 .text-operating-mode {
     font-size: 14px;
@@ -87,6 +139,16 @@ img {
 .breadcrumbs-active{
     text-decoration: none;
 }
+.title-filter {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.filter-other {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
 .slider-ice {
     list-style: none; 
 }
@@ -95,6 +157,9 @@ img {
     font-weight: bold;
     line-height: 60px;
     text-align: center;
+}
+.item-slider {
+    display: none;
 }
 .button {
     text-decoration: none;
@@ -110,10 +175,16 @@ img {
     line-height: 44px;
 }
 .promo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background-repeat: no-repeat;
     border-radius: 16px;
     width: 560px;
     height: 229px;
+}
+.promo-box-button {
+    align-self: flex-end;
 }
 .promo-raspberry {
     background-image: url("../img/raspberry.jpg");
@@ -133,6 +204,9 @@ img {
 }
 .list-hit {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .title-hit {
     font-size: 16px;
@@ -158,6 +232,8 @@ img {
 .desc {
     background-image: url(../img/waffle.png);
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
 }
 .title-desc {
     font-weight: 500;
@@ -167,8 +243,13 @@ img {
 }
 .list-desc {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .item-desc {
+    width: 485px;
+    height: 55px;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
@@ -176,16 +257,16 @@ img {
     padding-left: 55px;
 }
 .icon-ice {
-    background: url(../img/icon-ice.svg) no-repeat 0 -13px;
+    background: url(../img/icon-ice.svg) no-repeat 0;
 }
 .icon-list {
-    background: url(../img/icon-list.svg) no-repeat 0 -13px;
+    background: url(../img/icon-list.svg) no-repeat 0;
 }
 .icon-cow {
-    background: url(../img/icon-cow.svg) no-repeat 0 -13px;
+    background: url(../img/icon-cow.svg) no-repeat 0;
 }
 .icon-grad {
-    background: url(../img/icon-grad.svg) no-repeat 0 -13px;
+    background: url(../img/icon-grad.svg) no-repeat 0;
 }
 .aside {
     background-repeat: no-repeat;
@@ -216,7 +297,9 @@ img {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    color: var(--grey-dark-text); /*тут подчеркивание ссылки немного другого цвета, нужно через бордер боттом, но выше я уже не справилась*/
+    text-decoration: none;
+    color: var(--grey-dark-text);
+    border-bottom: 2px solid var(--text-border-news);
 }
 .text-subscribe {
     font-weight: normal;
@@ -234,6 +317,10 @@ img {
     background: linear-gradient(180deg, var(--pink-light) 0%, var(--pink-dark) 100%);
 }
 .form-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--background-white);
     width: 303px;
     height: 306px;
@@ -262,14 +349,14 @@ img {
     line-height: 18px;
     color: var(--basic-white);
 }
-/*
 .list-pagination-items-active {
     background-color: var(--basic-white);
     border-radius: 50%;
     color: var(--grey-dark-text);
 }
-*/
 .list-social {
+    display: flex;
+    flex-direction: row;
     list-style: none;
 }
 .icon-social {
@@ -311,6 +398,7 @@ img {
     color: var(--basic-white);
 }
 .feedback-form {
+    display: none;
     width: 477px;
     height: 441px;
     border-radius: 6px;
@@ -344,7 +432,7 @@ img {
     width: 428px;
     height: 154px;
     background-color: var(--basic-white);
-    border: 1px solid rgba(var(--grey-light-border), 0.52); /*Надо тут убрать бордер встроенный и добавить свой*/
+    border: 1px solid rgba(var(--grey-light-border), 0.52);
     border-radius: 4px;
 }
 .feedback-button {

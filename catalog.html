@@ -112,59 +112,59 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
-          <legend>Сортировка:</legend>
+          <legend class="title-filter">Сортировка:</legend>
           <select name="сортировка товаров">
-            <option value="по популярности" selected>по популярности</option>
-            <option value="сначала недорогие">сначала недорогие</option>
-            <option value="сначала дорогие">сначала дорогие</option>
-            <option value="по жирности">по жирности</option>
+            <option value="по популярности" class="filter-other" selected>по популярности</option>
+            <option value="сначала недорогие" class="filter-other">сначала недорогие</option>
+            <option value="сначала дорогие" class="filter-other">сначала дорогие</option>
+            <option value="по жирности" class="filter-other">по жирности</option>
           </select>
         </fieldset>
         <fieldset>
-          <legend>Цена: 100 &#8381; - 500 &#8381;</legend>
+          <legend class="title-filter">Цена: 100 &#8381; - 500 &#8381;</legend>
           <input type="range" min="100" max="500" step="1">
         </fieldset>
         <fieldset>
-          <legend>Жирность:</legend>
+          <legend class="title-filter">Жирность:</legend>
           <label>
-            <input type="radio" name="richness" value="0%">
+            <input type="radio" class="filter-other" name="richness" value="0%">
               0%
           </label>
           <label>
-            <input type="radio" name="richness" value="до 10%" checked>
+            <input type="radio" class="filter-other" name="richness" value="до 10%" checked>
               до 10%
           </label>
           <label>
-            <input type="radio" name="richness" value="до 30%">
+            <input type="radio" class="filter-other" name="richness" value="до 30%">
               до 30%
           </label>
           <label>
-            <input type="radio" name="richness" value="больше 30%">
+            <input type="radio" class="filter-other" name="richness" value="больше 30%">
               больше 30%
           </label>
         </fieldset>
         <fieldset>
-          <legend>Наполнители:</legend>
+          <legend class="title-filter">Наполнители:</legend>
           <ul class="hr-inline"> <!--расположить список горизонтально-->
             <li>
               <input type="checkbox" name="chocolate" id="filling-chocolate" checked>
-              <label for="filling-chocolate">шоколадные</label>
+              <label for="filling-chocolate" class="filter-other">шоколадные</label>
             </li>
             <li>
               <input type="checkbox" name="shugar" id="filling-shugar" checked>
-              <label for="filling-shugar">сахарные присыпки</label>
+              <label for="filling-shugar" class="filter-other">сахарные присыпки</label>
             </li>
             <li>
               <input type="checkbox" name="fruit" id="filling-fruit">
-              <label for="filling-fruit">фрукты</label>
+              <label for="filling-fruit" class="filter-other">фрукты</label>
             </li>
             <li>
               <input type="checkbox" name="syrup" id="filling-syrup">
-              <label for="filling-syrup">сиропы</label>
+              <label for="filling-syrup" class="filter-other">сиропы</label>
             </li>
             <li>
               <input type="checkbox" name="jam" id="filling-jam">
-              <label for="filling-jam">джемы</label>
+              <label for="filling-jam" class="filter-other">джемы</label>
             </li>
           </ul>
         </fieldset>

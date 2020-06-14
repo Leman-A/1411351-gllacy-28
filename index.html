@@ -7,15 +7,15 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Gllacy Shop</title>
   </head>
-  <body>
-  <header>
+  <body class="page-body">
+  <header class="container header-box">
     <nav class="main-nav">
       <a>
         <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип Глэйси">
       </a>
       <ul class="site-nav">
         <li><a href="catalog.html" class="site-nav-items">Каталог</a>
-          <ul>
+          <ul class="list-new-ice">
             <li>Новинки</li>
             <li><a href="catalog.html">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -29,7 +29,7 @@
     </nav>
 <!--Навигация с Поиском, Входом и Корзиной-->
     <nav class="user-nav">
-      <ul>
+      <ul class="list-user-nav">
         <li>
           <section class="search-form">
             <form action="https://echo.htmlacademy.ru" method="get">
@@ -68,25 +68,25 @@
       <a href="tel:+88124502525" class="phone-number">8 812 450-25-25</a>
     </section>
   </header>
-  <main>
+  <main class="container">
     <section>
       <h2 class="visually-hidden">Акция-слайдер</h2>
       <ul class="slider-ice">
-        <li>
+        <li class="slider-box">
           <div>
             <img src="img/ice-slider1.png" width="639" height="582" alt="Крем-брюле и пломбир с малиновым джемом">
           </div>
           <p class="text-slider">Крем-брюле и пломбир с малиновым джемом</p>
           <a href="#" class="button slider-button">Давайте оба!</a>
         </li>
-        <li>
+        <li class="item-slider">
           <div>
             <img src="img/ice-slider2.png" width="639" height="582" alt="Шоколадный пломбир и лимонный сорбет">
           </div>
           <p class="text-slider">Шоколадный пломбир и лимонный сорбет</p>
           <a href="#" class="button slider-button">Давайте оба!</a>
         </li>
-        <li>
+        <li class="item-slider">
           <div>
             <img src="img/ice-slider3.png" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
           </div>
@@ -95,17 +95,17 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="promo-box">
       <h2 class="visually-hidden">Акции</h2>
       <div class="promo promo-raspberry">
         <p class="title-promo">Малинка даром!</p>
         <p class="text-promo">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="#" class="button">Хочу варенье!</a>
+        <a href="#" class="button promo-box-button">Хочу варенье!</a>
       </div>
       <div class="promo promo-chocolate">
         <p class="title-promo">Шоколадки даром!</p>
         <p class="text-promo">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a href="#" class="button">Хочу шоколадки!</a>
+        <a href="#" class="button promo-box-button">Хочу шоколадки!</a>
       </div>
     </section>
     <section>
@@ -160,8 +160,8 @@
             </p>
             <span class="price">
               415 &#8381
-             </span>
-             <span class="weight">
+            </span>
+            <span class="weight">
              /кг
             </span>
             <h3 class="title-hit">Сливочное крем-брюле с карамельной подливкой</h3>
@@ -211,7 +211,7 @@
       </div>
     </section>
   </main>
-    <footer>
+    <footer class="container footer-box">
       <section>
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="list-social">
