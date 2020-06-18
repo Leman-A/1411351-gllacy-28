@@ -50,9 +50,9 @@ img {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 .container {
-    width: 1200;
+    width: 1200px;
     padding-left: 27px;
     padding-right: 27px;
     margin-left: auto;
@@ -63,15 +63,21 @@ img {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
-  }  
+}  
 .main-nav, .user-nav {
     font-size: 16px;
     font-weight: bold;
     line-height: 18px;
     color: var(--basic-white);
+    display: flex;
+    flex-direction: row;
+}
+.info-operating-box {
+    display: flex;
+    flex-direction: column;
 }
 .header-box {
-    display: grid;
+    display: flex;
 }
 .slider-box {
     display: flex;
@@ -92,27 +98,34 @@ img {
 }
 .site-nav {
     list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 .list-user-nav {
     list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 .site-nav-items,
 .user-nav-items {
-  color: var(--basic-white);
+    color: var(--basic-white);
 }
 .site-nav-items:hover,
 .site-nav-items:focus,
 .user-nav-items:hover,
 .user-nav-items:focus {
-  background-color: var(--basic-white);
-  border-radius: 26px;
-  color: var(--grey-dark-text);
+    background-color: var(--basic-white);
+    border-radius: 26px;
+    color: var(--grey-dark-text);
 }
 .search-form {
     display: none;
 }
 .login-form {
     display: none; 
+}
+.basket-section {
+    display: none;
 }
 .text-operating-mode {
     font-size: 14px;
@@ -128,6 +141,8 @@ img {
 }
 .list-breadcrumbs {
     list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 .breadcrumbs{
     font-weight: normal;
@@ -138,6 +153,39 @@ img {
 }
 .breadcrumbs-active{
     text-decoration: none;
+}
+.filter-form-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sort-box {
+    width: 196px;
+}
+.filter-price-box {
+    width: 218px;
+}
+.fat-filter-box {
+    width: 425px;
+}
+.extender-filter-box {
+    width: 711px;
+}
+.hr-inline {
+    display: flex;
+    flex-direction: row;
+}
+.filter-form-button {
+    text-decoration: none;
+    border: none;
+    width: 144px;
+    height: 36px;
+    color: var(--basic-white);
+    font-size: 16px;
+    line-height: 18px;
+    border: 2px solid var(--basic-white);
+    border-radius: 20px;
+    background: rgba(var(--white), 0.2)
 }
 .title-filter {
     font-weight: 500;
@@ -207,6 +255,10 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-hit {
+    width: 267px;
 }
 .title-hit {
     font-size: 16px;
@@ -249,7 +301,6 @@ img {
 }
 .item-desc {
     width: 485px;
-    height: 55px;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
@@ -268,6 +319,11 @@ img {
 .icon-grad {
     background: url(../img/icon-grad.svg) no-repeat 0;
 }
+.news-subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .aside {
     background-repeat: no-repeat;
     width: 560px;
@@ -276,11 +332,17 @@ img {
 }
 .news-section {
     background-image: url(../img/fon-strawberry.jpg);
+    display: flex;
+    flex-direction: column;
 }
 .subscribe {
     background-image: url(../img/fon-post.jpg);
 }
 .subscribe-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
     background-color: var(--grey-backrground-yellow);
     width: 548px;
     height: 210px;
@@ -341,6 +403,9 @@ img {
 }
 .list-pagination {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 .list-pagination-items {
     text-decoration: none;
@@ -365,22 +430,30 @@ img {
 }
 .footer-info {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.info-link {
+    font-size: 13px;
+    line-height: 18px;
+    width: 40%;
 }
 .item-provider {
     font-weight: bold;
-    font-size: 13px;
-    line-height: 18px;
     text-decoration: none;
     color: var(--basic-white);
     border-bottom: 1px solid rgba(var(--white), 0.2);
 }
 .item-information {
     font-weight: normal;
-    font-size: 13px;
-    line-height: 18px;
     text-decoration: none;
     color: var(--basic-white);
     border-bottom: 1px solid rgba(var(--white), 0.2);
+}
+.link-academy {
+    display: flex;
+    flex-direction: column;
 }
 .html-academy {
     font-weight: normal;
