@@ -70,7 +70,6 @@ img {
     line-height: 18px;
     color: var(--basic-white);
     display: flex;
-    flex-direction: row;
 }
 .info-operating-box {
     display: flex;
@@ -86,12 +85,10 @@ img {
 }
 .promo-box {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 .footer-box {
     display: flex;
-    flex-direction: row;
 }
 .list-new-ice {
     display: none;
@@ -99,12 +96,10 @@ img {
 .site-nav {
     list-style: none;
     display: flex;
-    flex-direction: row;
 }
 .list-user-nav {
     list-style: none;
     display: flex;
-    flex-direction: row;
 }
 .site-nav-items,
 .user-nav-items {
@@ -142,7 +137,6 @@ img {
 .list-breadcrumbs {
     list-style: none;
     display: flex;
-    flex-direction: row;
 }
 .breadcrumbs{
     font-weight: normal;
@@ -156,7 +150,6 @@ img {
 }
 .filter-form-box {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 .sort-box {
@@ -173,7 +166,6 @@ img {
 }
 .hr-inline {
     display: flex;
-    flex-direction: row;
 }
 .filter-form-button {
     text-decoration: none;
@@ -225,11 +217,9 @@ img {
 .promo {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     background-repeat: no-repeat;
     border-radius: 16px;
     width: 560px;
-    height: 229px;
 }
 .promo-box-button {
     align-self: flex-end;
@@ -253,7 +243,6 @@ img {
 .list-hit {
     list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -284,8 +273,6 @@ img {
 .desc {
     background-image: url(../img/waffle.png);
     border-radius: 16px;
-    display: flex;
-    flex-direction: column;
 }
 .title-desc {
     font-weight: 500;
@@ -296,7 +283,6 @@ img {
 .list-desc {
     list-style: none;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 .item-desc {
@@ -321,7 +307,6 @@ img {
 }
 .news-subscribe {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .aside {
@@ -340,7 +325,6 @@ img {
 }
 .subscribe-section {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     background-color: var(--grey-backrground-yellow);
@@ -404,7 +388,6 @@ img {
 .list-pagination {
     list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
 }
 .list-pagination-items {
@@ -421,7 +404,6 @@ img {
 }
 .list-social {
     display: flex;
-    flex-direction: row;
     list-style: none;
 }
 .icon-social {
@@ -431,7 +413,6 @@ img {
 .footer-info {
     list-style: none;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 .info-link {
