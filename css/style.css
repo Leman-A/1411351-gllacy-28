@@ -93,9 +93,6 @@ img {
     display: flex;
     justify-content: space-around;
 }
-.footer-box {
-    display: flex;
-}
 .list-new-ice {
     display: none;
 }
@@ -487,9 +484,19 @@ img {
     border-radius: 50%;
     color: var(--grey-dark-text);
 }
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
 .list-social {
     display: flex;
     list-style: none;
+    margin-left: -13px;
+}
+.social {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 .icon-social {
     border: 2px solid rgba(var(--white), 0.5);
@@ -497,13 +504,32 @@ img {
 }
 .footer-info {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 32px;
+    row-gap: 4px;
+    margin-left: -23px;
 }
 .info-link {
     font-size: 13px;
     line-height: 18px;
-    width: 40%;
+}
+.info-link .item-provider {
+    position: relative;
+    display: block;
+    margin-top: -1px;
+}
+.item-provider::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 13px;
+    top: 4px;
+    left: -22px;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 .item-provider {
     font-weight: bold;
@@ -520,6 +546,10 @@ img {
 .link-academy {
     display: flex;
     flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 26px;
 }
 .html-academy {
     font-weight: normal;
