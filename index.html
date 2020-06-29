@@ -7,14 +7,14 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Gllacy Shop</title>
   </head>
-  <body class="page-body site-wrapper site-wrapper-1">
+  <body class="page-body site-wrapper-1">
   <header class="container header-box">
     <nav class="main-nav">
       <a>
         <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип Глэйси" class="logo">
       </a>
       <ul class="site-nav">
-        <li><a href="catalog.html" class="site-nav-items">Каталог</a>
+        <li class="site-nav-items"><a href="catalog.html" class="site-nav-link">Каталог</a>
           <ul class="list-new-ice">
             <li>Новинки</li>
             <li><a href="catalog.html">Сливочное</a></li>
@@ -23,8 +23,8 @@
             <li><a href="#">Мелорин</a></li>
           </ul>
         </li>
-        <li><a href="delivery.html" class="site-nav-items">Доставка и оплата</a></li>
-        <li><a href="about_company.html" class="site-nav-items">О компании</a></li>
+        <li class="site-nav-items"><a href="delivery.html" class="site-nav-link">Доставка и оплата</a></li>
+        <li class="site-nav-items"><a href="about_company.html" class="site-nav-link">О компании</a></li>
       </ul>
     </nav>
 <!--Навигация с Поиском, Входом и Корзиной-->
@@ -109,7 +109,7 @@
       <h2 class="visually-hidden">Хиты</h2>
       <ul class="list-hit">
         <li>
-          <article class="card-hit">
+          <article class="card card-hit">
             <p class="ice-img">
               <img src="img/ice1-1.jpg" class="ice-pic" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </p>
@@ -119,11 +119,11 @@
             <span class="weight">
               /кг
             </span>
-            <h3 class="title-hit"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
+            <a href="#" class="title-hit"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
           </article>
         </li>
         <li>
-          <article class="card-hit">
+          <article class="card card-hit">
             <p class="ice-img">
               <img src="img/ice1-2.jpg" class="ice-pic" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             </p>
@@ -133,11 +133,11 @@
             <span class="weight">
               /кг
             </span>
-            <h3 class="title-hit"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></h3>
+            <a href="#" class="title-hit"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></a>
           </article>
         </li>
         <li>
-          <article class="card-hit">
+          <article class="card card-hit">
             <p class="ice-img">
               <img src="img/ice1-3.jpg" class="ice-pic" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </p>
@@ -147,11 +147,11 @@
             <span class="weight">
               /кг
             </span>
-            <h3 class="title-hit"><span class="underline">Сливочно-клубничное с&#160;присыпкой из белого шоколада</span></h3>
+            <a href="#" class="title-hit"><span class="underline">Сливочно-клубничное с&#160;присыпкой из белого шоколада</span></a>
           </article>
         </li>
         <li>
-          <article class="card-hit">
+          <article class="card card-hit">
             <p class="ice-img">
               <img src="img/ice1-4.jpg" class="ice-pic" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </p>
@@ -161,7 +161,7 @@
             <span class="weight">
              /кг
             </span>
-            <h3 class="title-hit"><span class="underline">Сливочное крем-брюле с&#160;карамельной подливкой</span></h3>
+            <a href="#" class="title-hit"><span class="underline">Сливочное крем-брюле с&#160;карамельной подливкой</span></a>
           </article>
         </li>
       </ul>
@@ -187,7 +187,7 @@
         <h2 class="visually-hidden">Подписка</h2>
         <div class="subscribe-section">
           <p class="text-subscribe">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и&#160;не слать всякой ненужной ерунды. Честно =)</p>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="subscribe-email" class="visually-hidden">Электронная почта</label>
             <input id="subscribe-email" class="subscribe-email" type="email" name="email" placeholder="email@example.com">
           </form>
@@ -199,11 +199,12 @@
       <h2 class="visually-hidden">Интерактивная карта</h2>
       <img src="img/map.jpg" width="1200" height="430" alt="Карта">
       <div class="form-map">
-        <span class="text-form">Адрес главного офиса и&#160;офлайн-магазина:</span>
-        <span class="info">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span>
-        <span class="text-order">Для заказов по телефону:</span>
+        <p class="text-form">Адрес главного офиса<br>
+          и офлайн-магазина:</p>
+        <p class="info">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
+        <p class="text-order">Для заказов по телефону:</p>
         <a href="tel:+88124502525" class="info-tel">8 812 450-25-25</a>
-        <span class="text-time">(с 10 до 20 ежедневно)</span>
+        <p class="text-time">(с 10 до 20 ежедневно)</p>
         <a href="#" class="button button-form-map">Форма обратной связи</a>
       </div>
     </section>
@@ -212,10 +213,10 @@
       <section class="social-section">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="list-social">
-          <li><a href="#" class="social"><img src="img/fb.svg" class="icon-social" width="32" height="32" alt="Фейсбук"></a></li>
-          <li><a href="#" class="social"><img src="img/vk.svg" class="icon-social" width="32" height="32" alt="Вконтакте"></a></li>
-          <li><a href="#" class="social"><img src="img/ig.svg" class="icon-social" width="32" height="32" alt="Инстаграм"></a></li>
-          <li><a href="#" class="social"><img src="img/tw.svg" class="icon-social" width="32" height="32" alt="Твиттер"></a></li>
+          <li><a href="#" class="social"><img src="img/fb.svg" class="icon-social" width="36" height="36" alt="Фейсбук"></a></li>
+          <li><a href="#" class="social"><img src="img/vk.svg" class="icon-social" width="36" height="36" alt="Вконтакте"></a></li>
+          <li><a href="#" class="social"><img src="img/ig.svg" class="icon-social" width="36" height="36" alt="Инстаграм"></a></li>
+          <li><a href="#" class="social"><img src="img/tw.svg" class="icon-social" width="36" height="36" alt="Твиттер"></a></li>
         </ul>
       </section>
       <section class="info-section">
