@@ -17,8 +17,6 @@
         <li class="site-nav-items"><a href="catalog.html" class="site-nav-link">Каталог</a>
           <ul class="list-new-ice">
             <li class="item-new-ice item-new">Новинки</li>
-            <li class="item-new-ice line-new-ice"><svg width="128" height="1" viewBox="0 0 128 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="0.5" x2="128" y2="0.5" stroke="#323232" stroke-opacity="0.2"/></svg></li>
             <li class="item-new-ice"><a class="new-ice-link" href="catalog.html">Сливочное</a></li>
             <li class="item-new-ice"><a class="new-ice-link" href="blank.html">Щербеты</a></li>
             <li class="item-new-ice"><a class="new-ice-link" href="blank.html">Фруктовый лед</a></li>
@@ -44,20 +42,22 @@
         </li>
         <li class="user-nav-items-login"><a href="entry.html" class="user-nav-items login-link">Вход</a>
           <section class="login-form">
-            <h2>Личный кабинет</h2>
+            <h2 class="visually-hidden">Личный кабинет</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <p>
+              <p class="login-window">
                 <label for="login" class="visually-hidden">Логин</label>
                 <input id="login" type="email" name="login" class="login" placeholder="email@example.com">
               </p>
-              <p>
+              <p class="login-window">
                 <label for="password" class="visually-hidden">Пароль</label>
                 <input id="password" type="password" class="password" name="password" placeholder="••••••">
               </p>
-              <button type="submit" class="button-login">Войти</button>
-              <div>
-                <a href="#" class="login-text">Забыли пароль?</a>
-                <a href="#" class="login-text">Новая регистрация</a>
+              <div class="button-registration">
+                <button type="submit" class="button-login">Войти</button>
+                <div class="registration">
+                  <a href="#" class="login-text">Забыли пароль?</a>
+                  <a href="#" class="login-text">Новая регистрация</a>
+                </div>
               </div>
             </form>
           </section>
