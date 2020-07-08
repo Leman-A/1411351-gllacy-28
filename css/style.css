@@ -1368,12 +1368,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     z-index: 1;
     position: fixed;
     right: 257px;
+    top: 59px;
     width: 277px;
     height: 214px;
     border-radius: 4px;
     background-color: var(--grey-backrground-yellow);
     box-shadow: 0px 20px 20px rgba(var(--black-shadow), 0.4);
-    margin-top: 11px;
 }
 .login-window {
     margin: 0;
