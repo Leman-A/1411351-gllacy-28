@@ -255,7 +255,7 @@ img {
 .login-link:active::before {
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='19' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z' fill='%23323232'/%3E%3Cpath d='M18 0H5a2 2 0 0 0-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z' fill='%23323232'/%3E%3C/svg%3E");
 }
-.user-nav-items-login:hover .login-form {
+.user-nav-items-login:hover .login-section {
     display: block;
 }
 .basket-section {
@@ -1358,6 +1358,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     padding-bottom: 11px;
 }
 .login-form {
+    padding-top: 20px;
+    padding-left: 19px;
+    padding-right: 16px;
+    padding-bottom: 30px;
+}
+.login-section {
     display: none;
     z-index: 1;
     position: fixed;
@@ -1372,8 +1378,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
 .login-window {
     margin: 0;
     padding: 0;
-    padding-top: 20px;
-    padding-left: 18px;
+    padding-bottom: 20px;
 }
 .login {
     font-weight: normal;
@@ -1409,13 +1414,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     background: linear-gradient(180deg, var(--pink-light) 0%, var(--pink-dark) 100%);
     padding: 0;
     margin: 0;
-    padding-top: 15px;
-    padding-bottom: 12px;
     padding-left: 25px;
     padding-right: 27px;
-    margin-left: 19px;
-    margin-top: 20px;
-    margin-right: 19px;
     font-weight: bold;
     font-size: 18px;
     line-height: 16px;
@@ -1423,14 +1423,13 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
 .button-registration {
     display: grid;
     grid-template-columns: auto auto;
-}
-.registration {
-    margin-top: 22px;
+    grid-template-rows: 43px;
+    column-gap: 20px;
 } 
 .login-text {
     font-weight: normal;
     font-size: 13px;
-    line-height: 15px;
+    line-height: 21px;
     text-decoration: none;
     color: var(--grey-dark-text);
     border-bottom: 1px solid rgba(var(--grey-dark-line), 0.3);;
