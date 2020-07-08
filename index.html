@@ -17,7 +17,7 @@
         <li class="site-nav-items"><a href="catalog.html" class="site-nav-link">Каталог</a>
           <ul class="list-new-ice">
             <li class="item-new-ice item-new">Новинки</li>
-            <li class="item-new-ice"><a class="new-ice-link" href="catalog.html">Сливочное</a></li>
+            <li class="item-new-ice-cream"><a class="new-ice-link" href="catalog.html">Сливочное</a></li>
             <li class="item-new-ice"><a class="new-ice-link" href="blank.html">Щербеты</a></li>
             <li class="item-new-ice"><a class="new-ice-link" href="blank.html">Фруктовый лед</a></li>
             <li class="item-new-ice"><a class="new-ice-link" href="blank.html">Мелорин</a></li>
@@ -207,7 +207,7 @@
         <p class="text-order">Для заказов по телефону:</p>
         <a href="tel:+88124502525" class="info-tel">8 812 450-25-25</a>
         <p class="text-time">(с 10 до 20 ежедневно)</p>
-        <a href="#" class="button button-form-map">Форма обратной связи</a>
+        <a href="#openModal" class="button button-form-map">Форма обратной связи</a>
       </div>
     </section>
   </main>
@@ -236,26 +236,24 @@
           <p class="text-academy">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy">HTML Academy</a> © 2019</p>
         </section>
     </footer>
-    <section class="feedback-form">
+    <div class="modal feedback-section" id="openModal">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="title-feedback">Мы обязательно вам ответим!</p>
-      <div>
-        <button type="button" class="feedback-close"><img src="img/x-big.svg" alt="крестик закрытия"></button>
-      </div>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="feedback-name" class="visualy-hidden">Имя</label>
-          <input id="feedback-name" type="text" name="name" class="feedback-name" placeholder="Как вас зовут?" required>
+        <a href="#close" class="modal-close" type="button" aria-label="Закрыть"></a>
+      <form action="https://echo.htmlacademy.ru" method="post" class="feedback-form">
+        <p class="feedback-input">
+          <label for="feedback-name" class="visually-hidden">Имя</label>
+          <input id="feedback-name" type="text" name="name" class="feedback-name" placeholder="Имя Фамилия" required>
         </p>
-        <p>
-          <label for="feedback-email" class="visualy-hidden">Почта</label>
-          <input id="feedback-email" type="email" name="email" class="feedback-email" placeholder="Ваша почта для ответа?" required>
+        <p class="feedback-input">
+          <label for="feedback-email" class="visually-hidden">Почта</label>
+          <input id="feedback-email" type="email" name="email" class="feedback-email" placeholder="email@example.com" required>
         </p>
-        <p>
-          <textarea class="feedback-comment" rows="10" cols="40" name="text" class="feedback-comment" placeholder="Напишите что-нибудь..."></textarea>
+        <p class="feedback-input-comment">
+          <textarea class="feedback-comment" rows="10" cols="40" name="text" class="feedback-comment" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit" class="feedback-button">Отправить</button>
       </form>
-    </section>
+    </div>
   </body>
 </html>
