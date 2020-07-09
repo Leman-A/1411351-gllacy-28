@@ -34,6 +34,7 @@
     --select-blue: #1E90FF;
     --box-shadow: 0, 0, 0;
     --background-hover-card: #9DB1A6;
+    --blue-border-active: 46, 136, 228;
 }
 
 body {
@@ -1380,12 +1381,10 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
   padding-bottom: 10px;
   padding-left: 13px;
 }
-.feedback-comment {
-    width: 428px;
-    padding-top: 12px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    padding-left: 13px;
+input.feedback-name:focus,
+input.feedback-email:focus
+.feedback-comment:focus {
+border: rgba(var(--blue-border-active), 0.52);
 }
 .feedback-close {
     background-color: var(--grey-backrground-yellow);
