@@ -246,6 +246,7 @@ img {
     background-color: var(--basic-white);
     border: 1px solid var(--grey-border-login);
     border-radius: 4px;
+    padding-right: 14px;
 }
 .icon-search {
     position: absolute;
@@ -390,6 +391,10 @@ img {
     padding-bottom: 15px;
     padding-right: 12px;
     border-radius: 26px;
+}
+.cross-basket {
+    border: none;
+    background: none;
 }
 .price-basket {
     color: var(--grey-basket-price);
@@ -654,6 +659,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+.filter-input-checkbox:checked + label::before {
+    display: none;
+}
   .filter-input-checkbox:checked + label::after {
     content: "";
     position: absolute;
@@ -851,14 +859,16 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     padding: 0;
     margin-bottom: -64px;
 }
-.card-hit::before {
+.card-hit::after {
     content: "";
     position: absolute;
+    top: 0;
     width: 61px;
     height: 61px;
     background-image: url("../img/hit.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+    z-index: 11;
 }
 .card {
     position: relative;
@@ -875,7 +885,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     border-radius: 4px;
     z-index: 10;
 }
-.card:hover .card-button{
+.card:hover .card-button-link{
     display: block;
 }
 .card-button-link {
@@ -883,11 +893,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 24px;
-    text-align: center;  
-    color: var(--basic-white);
-}
-.card-button {
+    line-height: 24px; 
     display: none;
     position: absolute;
     z-index: 10;
@@ -896,10 +902,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     bottom: -51px;
     left: 33px;
     padding-top: 10px;
-    padding-left: 16px;
-    background: linear-gradient(180deg,var(--pink-light) 0%, var(--pink-dark) 100%);
-    box-shadow: 0px 2px 2px rgba(var(--box-shadow-button), 0.64);
-    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     border-radius: 50px;
 }
 .title-hit {
@@ -1381,10 +1386,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
   padding-bottom: 10px;
   padding-left: 13px;
 }
-input.feedback-name:focus,
-input.feedback-email:focus
-.feedback-comment:focus {
-border: rgba(var(--blue-border-active), 0.52);
+input:focus {
+    border-color: rgba(var(--blue-border-active), 0.52);
 }
 .feedback-close {
     background-color: var(--grey-backrground-yellow);
@@ -1410,6 +1413,10 @@ border: rgba(var(--blue-border-active), 0.52);
     background-color: var(--basic-white);
     border: 1px solid rgba(var(--grey-light-border), 0.52);
     border-radius: 4px;
+    padding-top: 12px;
+    padding-left: 13px;
+    padding-bottom: 12px;
+    padding-right: 13px;
 }
 .feedback-button {
     text-decoration: none;
@@ -1464,6 +1471,8 @@ border: rgba(var(--blue-border-active), 0.52);
     border-radius: 4px;
     padding-left: 15px;
     padding-bottom: 4px;
+    padding-top: 4px;
+    padding-right: 15px;
     color: var(--grey-placeholder);
 }
 .password {
@@ -1476,6 +1485,8 @@ border: rgba(var(--blue-border-active), 0.52);
     font-size: 11px;
     padding-top: 4px;
     padding-left: 15px;
+    padding-bottom: 4px;
+    padding-right: 15px;
 }
 .button-login {
     text-decoration: none;
