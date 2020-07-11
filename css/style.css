@@ -884,7 +884,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     background-image: url("../img/hit.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    z-index: 11;
+    z-index: 2;
 }
 .card {
     position: relative;
@@ -899,7 +899,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     height: 402px;
     background: rgba(var(--white), 0.2);
     border-radius: 4px;
-    z-index: 10;
+    z-index: 1;
 }
 .card:hover .card-button-link{
     display: block;
@@ -934,16 +934,17 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     color: var(--basic-white);
     display: block;
     position: relative;
+    z-index: 2;
 }
 .title-hit:hover {
     color: var(--active-link);
     cursor: pointer;
-    z-index: 100;
+    z-index: 1;
 }
 .underline:hover {
     border-bottom: 1px solid rgba(var(--border-active-link), 0.3);
     cursor: pointer;
-    z-index: 100;
+    z-index: 1;
 }
 .underline {
     border-bottom: 1px solid rgba(var(--white), 0.2);
@@ -971,6 +972,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
 .desc {
     background-image: url(../img/waffle.png);
     border-radius: 16px;
+    z-index: -2;
+    position: relative;
 }
 .title-desc {
     font-weight: 500;
@@ -1361,13 +1364,14 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     display: block;
 }
 .feedback-section {
-    position: fixed;
+    position: absolute;
     width: 477px;
     height: 441px;
     padding-top: 15px;
     padding-left: 24px;
     padding-right: 25px;
     padding-bottom: 27px;
+    z-index: 3;
 }
 .modal-close {
     position: absolute;
