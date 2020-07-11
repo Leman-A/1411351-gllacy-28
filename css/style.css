@@ -35,6 +35,8 @@
     --box-shadow: 0, 0, 0;
     --background-hover-card: #9DB1A6;
     --blue-border-active: 46, 136, 228;
+    --active-link: #FFBC9E;
+    --border-active-link: 255, 188, 158;
 }
 
 body {
@@ -72,6 +74,11 @@ img {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+.active-link:hover {
+    color: var(--active-link);
+    border-bottom: 1px solid rgba(var(--border-active-link), 0.3);
+    cursor: pointer;
 }
 .page-body {
     min-height: 100%;
@@ -468,7 +475,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     font-size: 14px;
     line-height: 16px;
     color: var(--basic-white);
-    border: 1px solid rgba(var(--white), 0.2);
 }
 .arrow {
     position: relative;
@@ -489,7 +495,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     padding-top: 2px;
 }
 .item-breadcrumbs {
-    padding-right: 20px;
+    padding-right: 23px;
 }
 .title-catalog {
     font-style: normal;
@@ -635,18 +641,21 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     margin: 0;
     border: none;
 }
+.checkbox-title {
+    padding-bottom: 10px;
+}
 .hr-inline {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
     padding: 0;
+    justify-content: space-around;
+    display: flex;
     margin: 0;
     list-style: none;
     background: rgba(var(--white), 0.2);
     border-radius: 20px;
-    padding-top: 7px;
-    padding-bottom: 11px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 22px;
     margin-top: 3px;
-    padding-right: 15px;
 }
 .item-extender label {
     position: relative;
@@ -659,8 +668,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 18px;
-    top: 1px;
+    left: -32px;
+    top: -1px;
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -673,8 +682,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     position: absolute;
     width: 24px;
     height: 20px;
-    left: 17px;
-    top: 1px;
+    left: -34px;
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -683,7 +691,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    padding-left: 48px;
 }
 .sweet {
     right: -5px;
@@ -926,9 +933,21 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     text-decoration: none;
     color: var(--basic-white);
     display: block;
+    position: relative;
+}
+.title-hit:hover {
+    color: var(--active-link);
+    cursor: pointer;
+    z-index: 100;
+}
+.underline:hover {
+    border-bottom: 1px solid rgba(var(--border-active-link), 0.3);
+    cursor: pointer;
+    z-index: 100;
 }
 .underline {
     border-bottom: 1px solid rgba(var(--white), 0.2);
+    position: relative;
 }
 .list-hit .price {
     font-weight: bold;
@@ -941,7 +960,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     font-size: 30px;
     line-height: 35px;
     text-shadow: 0px 1px 3px rgba(var(--text-shadow-price), 0.5);
-    margin-left: -10px;
+    margin-left: -3px;
 }
 .ice-pic {
     border-radius: 50%;
@@ -1118,6 +1137,15 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     margin-left: -27px;
     margin-right: -27px;
 }
+.map-section iframe {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border: none;
+}
 .form-map {
     position: absolute;
     top: 61px;
@@ -1130,6 +1158,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     padding-top: 29px;
     padding-left: 25px;
     padding-right: 25px;
+    z-index: 3;
 }
 .map-section::before {
     content: "";
@@ -1141,6 +1170,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='h
     background-image: url(../img/ice-marker.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    z-index: 3;
 }
 .text-form {
     font-weight: normal;
